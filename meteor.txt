@@ -1,0 +1,14 @@
+start meteor app:
+> cd akademia\akademia_html_css\meteor\akademia
+> meteor
+
+App running at:
+http://localhost:3000/
+
+configuration:
+https://github.com/hakimel/reveal.js#configuration
+
+
+public meteor app:
+meteor deploy akademia_app.meteor.com
+http://akademia_app.meteor.com
