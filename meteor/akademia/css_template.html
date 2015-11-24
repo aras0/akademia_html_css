@@ -1,48 +1,166 @@
-<template name="css_template">
+<template name="css_template" xmlns="http://www.w3.org/1999/html">
     <section>
-        <img width="178" height="238" data-src="/images/css3.png">
+        <img  src="/images/css.jpg">
         <!--a href="images/css3.jpg">like this</a-->
     </section>
     <section>
         <ul>
-            <li>Kaskadowe arkusze stylów (Cascading Style Sheets) to język służący do opisu formy prezentacji (wyświetlania) stron WWW.</li>
-            <li>Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma został wyświetlana przez przeglądarki internetową zawartość wybranego elementu</li>
+            <li><span>Kaskadowe arkusze stylów (Cascading Style Sheets) to język służący do opisu formy prezentacji (wyświetlania) stron WWW.</span></li>
+
+            <li><span>Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma został wyświetlana przez przeglądarki internetową zawartość wybranego elementu</span></li>
         </ul>
     </section>
     <section>
-        <h3>Historia</h3>
-    </section>
-    <section>
-        <h4>Początki implementacji CSS1</h4>
-        <p>Została opublikowana pod koniec 1996.</p>
-        <p>Jedną z podstawowych właściwości CSS 1 jest kaskadowość.</p>
-        <p>Ważne: wszystko może być zmodyfikowane w jednym pliku.</p>
-    </section>
-    <section>
-        <h4>CSS 2 rozwiniete do  CSS 2.1</h4>
-        <p>Rekomendowana od 7 czerwca 2011.</p>
-        <p>Wprowadzone zostały nowe selektory i właściwości.</p>
-        <p>Oddzielono styl prezentacji dokument?w od ich zawartości.</p>
-        <p>CSS 2.1 wspomaga ustawienie (pozycjonowanie) treści, obsługuje ściągalne czcionki, wspiera układ graficzny tabeli, internalizacj?, automatyczne liczniki, numeracji i niektóre właściwości dotyczące interfejsu użytkownika.</p>
-    </section>
-    <section>
-        <h4>CSS 3</h4>
-        <p>Najwcześniejsza robocza wersja CSS 3 pojawia się w czerwcu 1999.</p>
-        <p>W czerwcu 2012 roku CSS Working Group mia?o opublikowanych ponad 50 r?nych modu??w</p>
-    </section>
-    <section>
-        <h4>CSS 4</h4>
-        <p>Nie istnieje ju? jako jedna specyfikacja</p>
-        <p>Zmienione moduły oparte na sprawdzonych modu?ach poziomu 3 rozwineły się do wersji CSS4:</p>
+        <p>Cel i główne zastosowanie::</p>
         <ul>
-            <li>własności grafiki (image values),</li>
-            <li>tła i obramowania (backgrounds & borders),</li>
-            <li>selektory</li>
+            <li>Styl dla stron WWW.</li>
+            <li>Rozdzielenie tresci od formatowania dla HTML.</li>
+            <li>Proste arkusze stylu dla XML</li>
         </ul>
     </section>
     <section>
-        <h4>Historia</h4>
+        <section>
+            <h3>Historia</h3>
+            <p>Początki CSS: 1994</p>
+        </section>
+
+        <section>
+            <h4>Początki implementacji CSS1</h4>
+            <p>Została opublikowana pod koniec 1996.</p>
+            <p>Jedną z podstawowych właściwości CSS 1 jest kaskadowość.</p>
+            <p>Wszystko modyfikowane jest w jednym pliku.</p>
+        </section>
+        <section>
+            <h4>CSS 2 rozwiniete do  CSS 2.1</h4>
+            <p>Rekomendacja CSS Level 2 to maj 1998.</p>
+            <p>Wprowadzone zostały nowe selektory i właściwości.</p>
+            <p>Oddzielono styl prezentacji dokumentów od ich zawartości.</p>
+            <p>CSS 2.1 wspomaga ustawienie (pozycjonowanie) treści, obsługuje ściągalne czcionki, wspiera układ graficzny tabeli, internalizacja, automatyczne liczniki, numeracji i niektóre właściwości dotyczące interfejsu użytkownika.</p>
+            <p>Dostosowanie specyfikacji do powszechnie stosowanych praktyk i rezygnacja z rzeczy, które się nie sprawdziły</p>
+        </section>
+        <section>
+            <h4>CSS 3</h4>
+            <p>Najwcześniejsza robocza wersja CSS 3 pojawia się w czerwcu 1999.</p>
+            <p>Rekomendacja W3C z dnia 29 września 2011 r.</p>
+            <ul>
+                <li>Wprowadzenie podziału na moduły.</li>
+                <li>Wprowadzenie nowych selektorów, pseudoklas i pseudoelementów.</li>
+                <li>Wprowadzenie nowych stylów i właściwości.</li>
+            </ul>
+            <p>W czerwcu 2012 roku CSS Working Group miało opublikowanych ponad 50 różnych modułów</p>
+        </section>
+        <section>
+            <h4>CSS 4</h4>
+            <p>Nie istnieje już jako jedna specyfikacja</p>
+            <p>Zmienione moduły oparte są na sprawdzonych modułach poziomu 3 i rozwineły się do wersji CSS4:</p>
+            <ul>
+                <li>własności grafiki (image values),</li>
+                <li>tła i obramowania (backgrounds & borders),</li>
+                <li>selektory</li>
+            </ul>
+        </section>
     </section>
+    <section>
+        <section>
+            <h4>Co nowego?</h4>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h4>zaokrąglone rogi</h4>
+            <img width="90%" height="90%" src="/images/border_radius.jpg">
+        </section>
+        <section>
+
+            <p>{stala}border-radius: promień{/stala}</p>
+            <code>
+                <ul>
+                    <li><a class="top-lef">border-top-left-radius:6px; - lewy górny róg</a></li>
+                    <li><a class="top-right">border-top-right-radius:6px; - prawy górny róg</a></li>
+                    <li><a class="bottom-left">border-bottom-left-radius:6px; - lewy dolny róg</a></li>
+                    <li><a class="bottom-right">border-bottom-right-radius:6px; - prawy dolny róg</a></li>
+                    <li><a class="border-radius">border-radius:20px 5px; - wszystkie rogi: 20px na X, 5px na Y</a></li>
+                </ul>
+            </code>
+            <div id="rogi" class="rogi"> example </div>
+        </section>
+        <section>
+            <code>-moz-border-radius: 12px;
+            -webkit-border-radius: 12px;</code>
+            <p>nie wszystkie przeglądarki wpierały border-radius</p>
+            <ul>
+                <li>-moz- dla Firefoksa,</li>
+                <li>-webkit- dla Safari i Chrome</li>
+            </ul>
+        </section>
+        <section>
+            <img  src="/images/wsparcie_border-radius.jpg">
+        </section>
+
+        <section>http://border-radius.com/</section>
+    </section>
+    <section>
+        <section>
+            <h4>cienie</h4>
+            <img width="90%" height="90%" src="/images/box-shadow_examples.png">
+        </section>
+        <section>
+            <p>box-shadow</p>
+            <p>Cień zewnętrzny</p>
+        </section>
+        <section id="outside">
+            <ul>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="box-shadow">box-shadow: 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="box-shadow2">box-shadow: 10px 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="box-shadow3">box-shadow: 10px 10px 0 10px #666;</a></li>
+                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="box-shadow4">box-shadow: 0 0 10px 10px #FF0000;</a></li>
+            </ul>
+            <div id="cien" class="cien"> example </div>
+        </section>
+        <section>
+            <p>inset-shadow</p>
+            <p>Cień wewnętrzny</p>
+        </section>
+        <section id="inside">
+            <ul>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="inset-shadow">box-shadow: inset 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="inset-shadow2">box-shadow: inset 10px 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="inset-shadow3">box-shadow: inset 10px 10px 0 10px #666;</a></li>
+                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="inset-shadow4">box-shadow: inset 0 0 10px 10px #FF0000;</a></li>
+            </ul>
+            <div id="cien2" class="cien2"> example </div>
+        </section>
+        <section>
+            <img  src="/images/wsparcie_border-radius.jpg">
+        </section>
+    </section>
+    <section>
+        <section>
+        </section>
+        <section id="inside">
+            <ul>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="inset-shadow">box-shadow: inset 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                <li><a class="inset-shadow2">box-shadow: inset 10px 10px 10px #666;</a></li>
+                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="inset-shadow3">box-shadow: inset 10px 10px 0 10px #666;</a></li>
+                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                <li><a class="inset-shadow4">box-shadow: inset 0 0 10px 10px #FF0000;</a></li>
+            </ul>
+            <div id="cien2" class="cien2"> example </div>
+        </section>
+
+    </section>
+
     <section>
         Najwa?niejsze r?nice mi?dzy selektorami CSS 2 i selektorami opisanymi w niniejszym dokumencie to:
 
@@ -61,6 +179,17 @@
         <section>cccc</section>
     </section>
     <section>
-        ddd
+        <h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+                        function linkify( selector ) {
+                        if( supports3DTransforms ) {
+
+                        var nodes = document.querySelectorAll( selector );
+                        }
+                        }
+                    </code></pre>
+    </section>
+
+    <section>
     </section>
 </template>

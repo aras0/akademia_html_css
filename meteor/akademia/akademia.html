@@ -24,9 +24,11 @@
 </head>
 
 <body>
-  <h1>Welcome to Akademia!</h1>
   {{> menu}}
   {{> reveal}}
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
 </body>
 
 
@@ -44,13 +46,11 @@
 <template name="reveal">
   <div class="reveal">
     <div class="slides">
-        <section data-background="/images/html5-css3.png">
+        <section>
+            <img  width="426" height="315" src="/images/html5-css3.png">
         </section>
       <section>jakiś ogólny wstęp</section>
-      <section>
-        <p> About html5</p>
 
-      </section>
       {{> html_template}}
       {{> css_template}}
       {{> example_app_template}}
