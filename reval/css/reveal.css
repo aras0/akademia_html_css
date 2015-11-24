@@ -1336,3 +1336,5 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+.html5badge {
+color:red; }

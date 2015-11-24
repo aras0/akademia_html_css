@@ -36,9 +36,42 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<script type="text/javascript">
+			    var canvas
+			    var context;
+			    var x = 200;
+			    var y = 20;
+			    var dy = 10;
+			    var kolory = new Array("blue", "red", "yellow", "green");
+			    var i = 0;
+
+			    function draw() {
+			        canvas = document.getElementById('image1');
+			        context = canvas.getContext('2d');
+			        setInterval(anim, 1000);
+			    }
+
+			    function anim() {
+			        context.clearRect(0, 0, canvas.width, canvas.height);
+			        y += dy;
+			        if (y > (canvas.height - 20)) {
+			            dy = -10;
+			            i = ++i % kolory.length;
+			        }
+			        if (y < 20) {
+			            dy = 10;
+			            i = ++i % kolory.length;
+			        }
+			        context.beginPath();
+			        context.fillStyle = kolory[i];
+			        context.arc(x, y, 20, 0, Math.PI * 2, true);
+			        context.closePath;
+			        context.fill();
+			    }
+			</script>
 	</head>
 
-	<body onload="init()" onresize="windowResize()">
+	<body onload="draw(); onresize="windowResize()">
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
@@ -237,21 +270,48 @@ function makeNormal() {
 </script> 
 					</section>
 			   </section>
-			   <section>
-					<section>
-					<h3>Czy mogę użyć ??</h3>
-					</section>
-					<section>
-						<iframe src="http://caniuse.com" width="800" height="600" ></iframe>
-					</section>
-			   </section>
 				<section>
 					<section>
 					<h3>Canvas</h3>
 					</section>
-					<section> sdvsd
-						<canvas id="canvas">
-						</canvas>
+					<section>
+					Canvas — element języka HTML wprowadzony w HTML 5 pozwalający na dynamiczne, skryptowe renderowanie kształtów i obrazów bitmapowych. Dzięki wprowadzeniu obiektu canvas możliwe stało się tworzenie dynamicznych dwu- i trójwymiarowych animacji czy gier działających w przeglądarkach bez dodatkowych wtyczek.
+					</section>
+					<section>
+					<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.strokeStyle="red";
+ctx.stroke();
+</script>
+<pre><code>
+&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.&lt;/canvas>
+
+&lt;script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.strokeStyle="red";
+ctx.stroke();
+&lt;/script>
+</code></pre>
+					</section>
+					<section>
+					<canvas id="image1" width="400" height="400">
+			Twoja przeglądarka nie wspiera elementu canvas!
+			Pobierz Internet Explorer 9 lub nowszą wersję! 
+					</canvas>
+			   </section>
+			   	<section>
+					<section>
+					<h3>WebGL</h3>
 					</section>
 					<section>
 						<iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800" height="600" ></iframe>
@@ -262,17 +322,82 @@ function makeNormal() {
 			   </section>
 			   <section>
 					<section>
-					<h3>WebGL???</h3>
+					<h3>Czy mogę użyć ??</h3>
 					</section>
-					<section> 
-					<h3>WebGL</h3>
-                    <h3>WebSocket</h3>
-                    <h3>Geolocation</h3>
-					<h3>Wielowątkowość</h3>
+					<section>
+						<iframe src="http://caniuse.com" width="800" height="600" ></iframe>
+					</section>
+					<section>
+						Tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy notuje 7.76% na polskim rynku
+						<iframe src="http://html5please.com/" width="800" height="600" ></iframe>
 					</section>
 			   </section>
 			   <section>
-			   <h2>Wiem, że coś istnieje w HTML5, ale nie wiem czy mogę tego bezpiecznie używać</h2>
+					<section>
+					<h3>Nowa era formularzy</h3>
+					</section>
+					<section>
+				<table class="w3-table-all notranslate" style="font-size:22px">
+<tbody><tr>
+<th style="width:20%">Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input field should be disabled</td>
+</tr>
+<tr>
+<td class="html5badge">max</td>
+<td>Specifies the maximum value for an input field</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>Specifies the maximum number of character for an input field</td>
+</tr>
+<tr>
+<td class="html5badge">min</td>
+<td>Specifies the minimum value for an input field</td>
+</tr>
+<tr>
+<td class="html5badge">pattern</td>
+<td>Specifies a regular expression to check the input value against</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>Specifies that an input field is read only (cannot be changed)</td>
+</tr>
+<tr>
+<td class="html5badge">required</td>
+<td>Specifies that an input field is required (must be filled out)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Specifies the width (in characters) of an input field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Specifies the default value for an input field</td>
+</tr>
+</tbody></table>
+
+					<div style="transform: translate(10%,0%)" >
+					 <form style="font-size:22px">
+Wymagana liczba:<br>
+<input type="number" name="requiredNumber" required="true" autofocus>
+<br>
+Email:<br>
+<input type="email" name="email">
+<br>
+</form>
+					</div></section>
+			   </section>
+			   <section>
+					<section> 
+                    <h3>WebSocket</h3>
+                    <h3>Geolocation</h3>
+					<h3>Wielowątkowość</h3>
+					<h3>http://html5readiness.com/</h3>
+					</section>
 			   </section>
 				<section style="text-align: left;">
 					<h1>THE END</h1>
