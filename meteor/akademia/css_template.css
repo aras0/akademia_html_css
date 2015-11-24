@@ -1,0 +1,33 @@
+.rogi {
+    background-color: #4E9FEE;
+    color: #fff;
+    height: 90px;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid #fff;
+    font-family: tahoma;
+    padding: 5px;
+/*    align-items: center;
+    justify-content: center;*/
+}
+
+.cien, .cien2{
+    background-color: #4e9fee;
+    color: #fff;
+    height: 90px;
+    width: 400px;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid #fff;
+    font-family: tahoma;
+    padding: 5px;
+    -khtml-box-shadow: 3px 3px #666;
+    -moz-box-shadow: 3px 3px #666;
+    -webkit-box-shadow: 3px 3px #666;
+    box-shadow: 3px 3px #666;
+}
+
+ul > li > a {
+    cursor: pointer;
+}
