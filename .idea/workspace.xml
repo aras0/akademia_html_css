@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64a79972-87c9-48c3-90eb-fb44f01fd07d" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meteor/akademia/css_template.css" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reval/index_akademia.html" afterPath="$PROJECT_DIR$/reval/index_akademia.html" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reval/images/css.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reval/images/css3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reval/images/html5-css3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reval/images/html5pluscss3_respon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meteor/akademia/css/theme/night.css" />
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
       <change type="DELETED" beforePath="C:\Users\sczelusniak\Documents\GitHub\akademia\akademia_html_css\reval\index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meteor/akademia/akademia.html" afterPath="$PROJECT_DIR$/meteor/akademia/akademia.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meteor/akademia/akademia.js" afterPath="$PROJECT_DIR$/meteor/akademia/akademia.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meteor/akademia/css_template.html" afterPath="$PROJECT_DIR$/meteor/akademia/css_template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reval/index_przyklad.html" afterPath="$PROJECT_DIR$/reval/index_przyklad.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
     </list>
     <ignored path="akademia_html_css.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,6 +42,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
+      <file leaf-file-name="index_akademia.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reval/index_akademia.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.84647304">
+              <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+=======
       <file leaf-file-name="akademia.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meteor/akademia/akademia.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,7 +93,22 @@
         <entry file="file://$PROJECT_DIR$/meteor/akademia/css_template.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
               <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+=======
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css_template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meteor/akademia/css_template.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
               <folding />
             </state>
           </provider>
@@ -105,9 +140,18 @@
         <option value="$PROJECT_DIR$/reval/index_przyklad.html" />
         <option value="$PROJECT_DIR$/meteor/akademia/plugin/markdown/example.html" />
         <option value="$PROJECT_DIR$/meteor/akademia/akademia.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/meteor/akademia/akademia.js" />
         <option value="$PROJECT_DIR$/meteor/akademia/css_template.css" />
         <option value="$PROJECT_DIR$/meteor/akademia/css_template.html" />
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/reval/index_akademia.html" />
+=======
+        <option value="$PROJECT_DIR$/meteor/akademia/css_template.html" />
+        <option value="$PROJECT_DIR$/meteor/akademia/html_template.html" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
       </list>
     </option>
   </component>
@@ -119,8 +163,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1911" />
-    <option name="y" value="-9" />
+    <option name="x" value="-1778" />
+    <option name="y" value="147" />
     <option name="width" value="1938" />
     <option name="height" value="1098" />
   </component>
@@ -163,7 +207,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
+              <option name="myItemId" value="akademia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -173,31 +217,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
+              <option name="myItemId" value="akademia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reval" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reval" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="plugin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -205,7 +238,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
+              <option name="myItemId" value="akademia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -248,10 +281,13 @@
               <option name="myItemId" value="meteor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
+=======
             <PATH_ELEMENT>
               <option name="myItemId" value="akademia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -260,6 +296,9 @@
               <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -267,7 +306,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="akademia_html_css" />
+              <option name="myItemId" value="akademia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -289,6 +328,12 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,16 +415,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-1778" y="147" width="1938" height="1098" extended-state="0" />
+    <editor active="false" />
+=======
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19155672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960423" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43473685" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39473686" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17473684" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -467,7 +526,11 @@
     <entry file="file://$PROJECT_DIR$/reval/index_akademia.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="310" column="24" selection-start-line="310" selection-start-column="24" selection-end-line="310" selection-end-column="54" />
+=======
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
           <folding />
         </state>
       </provider>
@@ -475,6 +538,9 @@
     <entry file="file://$PROJECT_DIR$/meteor/akademia/css_template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -515,6 +581,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
           <folding />
         </state>
       </provider>
@@ -652,6 +719,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/meteor/akademia/html_template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.04689655">
@@ -660,6 +728,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meteor/akademia/public/images/css.jpg">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/meteor/akademia/css_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/meteor/akademia/public/images/html5-css3.png">
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -689,23 +766,49 @@
     <entry file="file://$PROJECT_DIR$/meteor/akademia/akademia.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD
           <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+=======
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meteor/akademia/akademia.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-9.076923">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/meteor/akademia/css_template.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/reval/index_akademia.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.84647304">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+=======
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           <folding />
         </state>
       </provider>
@@ -720,8 +823,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reval/index_akademia.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="9.069037">
           <caret line="318" column="25" selection-start-line="318" selection-start-column="25" selection-end-line="318" selection-end-column="25" />
+=======
+        <state vertical-scroll-proportion="0.04689655">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+>>>>>>> 8cdb4638d9fd0cf03d2e9f56e56cf62f197e5064
+>>>>>>> 59c4e5c90028f94aaec3e0f5bd4eef46ba263e5f
           <folding />
         </state>
       </provider>
