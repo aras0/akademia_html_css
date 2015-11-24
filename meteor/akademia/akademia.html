@@ -1,4 +1,4 @@
-<head>
+﻿<head>
   <!--meta charset="utf-8"-->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!--meta charset="iso-8859-2"-->
@@ -23,12 +23,14 @@
   <![endif]-->
 </head>
 
-<body>
+<body onload="init()" onresize="windowResize()">
   {{> menu}}
   {{> reveal}}
 
   <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="../../reval/js/reveal.js"></script>
+  <script type="text/javascript" src="server/js/canvas3d.js"></script>
+
 </body>
 
 

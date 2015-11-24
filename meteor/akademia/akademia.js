@@ -1,3 +1,21 @@
+var g;
+var canvas;
+var width = window.innerWidth ;
+var height =  window.innerHeight ;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+var mouseX = 0;
+var mouseY = 0;
+var pmouseX = 0;
+var pmouseY = 0;
+var mousePressed = false;
+var drawRate = 6;
+var frameCount = 0;
+
+var PI = Math.PI;
+var TWO_PI = 2*Math.PI;
+var HALF_PI = Math.PI*0.5;
+
 if (Meteor.isClient) {
   Meteor.startup( function() {
     Reveal.initialize();
@@ -77,7 +95,8 @@ if (Meteor.isClient) {
       document.getElementById("cien2").style.boxShadow ="inset 0 0 10px 10px #FF0000";
     }
   });
-}
+
+  }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
