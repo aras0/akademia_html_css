@@ -48,7 +48,7 @@
 			    function draw() {
 			        canvas = document.getElementById('image1');
 			        context = canvas.getContext('2d');
-			        setInterval(anim, 1000);
+			        setInterval(anim, 100);
 			    }
 
 			    function anim() {
@@ -71,7 +71,7 @@
 			</script>
 	</head>
 
-	<body onload="draw(); onresize="windowResize()">
+	<body onload="draw();" onresize="windowResize()">
 		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
@@ -304,12 +304,12 @@ ctx.stroke();
 </code></pre>
 					</section>
 					<section>
-					<canvas id="image1" width="400" height="400">
+					<canvas id="image1" width="400" height="400" style="border:1px solid #d3d3d3;>
 			Twoja przeglądarka nie wspiera elementu canvas!
 			Pobierz Internet Explorer 9 lub nowszą wersję! 
 					</canvas>
-			   </section>
-			   	<section>
+					</section>
+					</section>
 					<section>
 					<h3>WebGL</h3>
 					</section>
