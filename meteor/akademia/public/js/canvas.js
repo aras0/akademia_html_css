@@ -1,4 +1,5 @@
-			var g;	
+/*
+			var g;
 			var canvas;
 			var width = window.innerWidth ;
 			var height =  window.innerHeight ;
@@ -457,4 +458,4 @@
 			function mousePressedEvent(){
 			}
 			
-			
+			*/

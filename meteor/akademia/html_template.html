@@ -96,24 +96,22 @@
         <section>
 
             <div width="800" height="600">
-                Doctype i kodowanie znaków:<pre class="prettyprint lang-html linenums"><code height="600" width="800">
-    &lt; !DOCTYPE html>
-    &lt;html>
-    &lt;head>
-    &lt;meta charset="UTF-8">
-    &lt;title>Title of the document&lt;/title>
-    &lt;/head>
-
-    &lt;body>
-    Content of the document......
-    &lt;/body>
-
-    &lt;/html></code></pre>
+                Doctype i kodowanie znaków:
+                    <pre height="600" width="800" class="prettyprint lang-html linenums">
+                        <span class="typ">&lt;!DOCTYPE html></span>
+                        <span class="kwd">&lt;html></span>
+                        <span class="kwd">  &lt;head></span>
+                        <span class="pun">  &lt;meta charset="UTF-8"></span>
+                        <span class="lit">      &lt;title>Title of the document&lt;/title></span>
+                        <span class="kwd">  &lt;/head></span>
+                        <span class="kwd">  &lt;body></span>
+                        <span class="tag">      Content of the document......</span>
+                        <span class="kwd">  &lt;/body></span>
+                        <span class="kwd">&lt;/html></span>
+                    </pre>
             </div>
-
         </section>
         <section>
-            <p>
             <ul>
                 <li>Nowe znaczniki:
                     <div style="font-size:22px">
@@ -144,8 +142,8 @@
                     </div>
                 </li>
             </ul>
-            </p>
         </section>
+
         <section>
             <div>
                 <p><img alt="Sposób formatowania strony w HTML4" src="/img/html4.jpg" height="280px" width="500px">
@@ -155,6 +153,7 @@
                 </p>
             </div>
         </section>
+
         <section>
             <h2>Elementy usunięte w HTML5: </h2>
             <table class="w3-table-all" style="font-size:22px">
@@ -214,8 +213,8 @@
                 </tbody>
             </table>
         </section>
-
     </section>
+
     <section>
         <section>
             <h3>&lt;audio>,&lt;video></h3>
@@ -271,19 +270,7 @@
                 Your browser does not support the HTML5 canvas tag.
             </canvas>
             <div width="800" height="600">
-<pre><code>
-    &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-    Your browser does not support the HTML5 canvas tag.&lt;/canvas>
-
-    &lt;script>
-    var c = document.getElementById("myCanvas");
-    var ctx = c.getContext("2d");
-    ctx.moveTo(0,0);
-    ctx.lineTo(200,100);
-    ctx.strokeStyle="red";
-    ctx.stroke();
-    &lt;/script>
-</code></pre>
+                <img style="border:0px solid #d3d3d3;" src="/img/canvas.png" alt="canvas">
             </div>
         </section>
         <section>
@@ -294,7 +281,7 @@
         </section>
     </section>
 
-   <section>
+    <section>
         <section>
             <h3>Canvas + WebGL</h3>
         </section>
@@ -313,12 +300,12 @@
             C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
         </section>
         <section>
-            <iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800"
-                    height="600"></iframe>
+            <!--iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800"
+                    height="600"></iframe-->
         </section>
         <section>
-            <iframe src="http://alteredqualia.com/xg/examples/deferred_textured_lights.html" width="800"
-                    height="600"></iframe>
+            <!--iframe src="http://alteredqualia.com/xg/examples/deferred_textured_lights.html" width="800"
+                    height="600"></iframe-->
         </section>
     </section>
     <section>
@@ -328,10 +315,10 @@
         <section>
             <iframe src="http://caniuse.com" width="800" height="600"></iframe>
         </section>
-        <section>
-            Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy
-            notuje 7.76%
-            na polskim rynku
+        <section style="font-size: large">
+            <p>Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8,</p>
+
+            <p>która na dzień dzisiejszy notuje 7.76% na polskim rynku.</p>
             <iframe src="http://html5please.com/" width="800" height="600"></iframe>
         </section>
     </section>
@@ -387,18 +374,20 @@
             <br>
 
             <div>
-                <form style="font-size:22px">
-                    Wymagana liczba:<br>
-                    <input type="number" name="requiredNumber" required="true" autofocus>
+                <form style="font-size:32px;">
+                    <p>Wymagana liczba:</p>
+                    <input style="color: #000;" type="number" name="requiredNumber" required="true" autofocus>
                     <br>
-                    Email:<br>
-                    <input type="email" name="email">
+
+                    <p>Email:</p>
+                    <input style="color: #000;" type="email" name="email">
                     <br>
                 </form>
             </div>
         </section>
     </section>
-    <section>
+
+    <section id="WebSocket">
         <section>
             <h3>WebSocket Html5</h3>
         </section>
@@ -407,43 +396,48 @@
             • Komunikacja w czasie rzeczywistym
             • Streaming
             • Monitoring<br/><br/>
-            Websocket-architecture:<br/><img src="img/websocket-architecture.jpg" alt="websocket-architecture"
-                                             height="350" width="500">
+            Websocket-architecture:<br/>
+            <img src="/img/websocket-architecture.jpg" alt="websocket-architecture" height="350" width="500">
         </section>
         <section>
             <h3>Http vs HTML5 WebSocket</h3>
-            <img src="img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
+            <img src="/img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
         </section>
-        <section>
-            <iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe>
+        <section id="auto">
+            <!--iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe-->
         </section>
     </section>
     <section>
         <section>
             <h3>Geolocation</h3>
         </section>
-        <section>
-            <iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe>
+        <section id="geolocation">
+            <!--iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe-->
         </section>
+    </section>
+    <section>
         <section>
             <h3>Wielowątkowość - HTML5 web workers</h3>
-            <img src="img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
+            <img src="/img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
         </section>
         <section>
             <h3>Przykład Obliczanie silni: </h3>
 
-            <form name="f1" style="font-size:12px">
-                <input id="text" type="text" length="8" name="txt1" value="200000000">
-                <input id="runSta" type="button" value="Start">
+            <form name="f1" style="font-size:22px">
+                <div class="form-group has-success">
+                    <input style="color: #000;" id="text" type="text" length="8" name="text" value="200000000">
+                    <button type="button" id="runSta" class="btn btn-primary">Start</button>
+                    <!--input type="button" value="Start" onclick="runSta(txt1.value)"-->
+                </div>
             </form>
 
             <h5>Web workers:</h5>
 
-            <div>
+            <div class="form-group has-success">
               <span>
-                   <input type="number" id="count" value="200000000"/>
-                   <button id="start">Start</button>
-                   <button id="terminate">Terminate</button>
+                   <input style="color: #000;" type="number" id="count" value="200000000"/>
+                   <button type="button" id="start" class="btn btn-info">Start</button>
+                   <button type="button" id="terminate" class="btn btn-danger">Terminate</button>
               </span>
             </div>
             <div style="height: 350px;overflow-y: scroll;overflow-x:hidden;">

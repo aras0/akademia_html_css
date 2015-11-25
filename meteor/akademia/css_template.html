@@ -25,7 +25,7 @@
         </section>
 
         <section>
-            <h4>Początki implementacji CSS1</h4>
+            <h3>Początki implementacji CSS1</h3>
                 <ul>
                     <li>Została opublikowana pod koniec 1996.</li>
                     <li>Jedną z podstawowych właściwości CSS 1 jest kaskadowość.</li>
@@ -34,7 +34,7 @@
         </section>
 
         <section>
-            <h4>CSS 2 rozwiniete do  CSS 2.1</h4>
+            <h3>CSS 2 rozwiniete do  CSS 2.1</h3>
             <ul>
                 <li>Rekomendacja CSS Level 2 to maj 1998.</li>
                 <li>Wprowadzone zostały nowe selektory i właściwości.</li>
@@ -45,7 +45,7 @@
 
         </section>
         <section>
-            <h4>CSS 3</h4>
+            <h3>CSS 3</h3>
             <p>Najwcześniejsza robocza wersja CSS 3 pojawia się w czerwcu 1999.</p>
             <p>Rekomendacja W3C z dnia 29 września 2011 r.</p>
             <ul>
@@ -57,7 +57,7 @@
             <p>miało opublikowanych ponad 50 różnych modułów</p>
         </section>
         <section>
-            <h4>CSS 4</h4>
+            <h3>CSS 4</h3>
             <p>Nie istnieje już jako jedna specyfikacja</p>
             <p>Zmienione moduły oparte są na sprawdzonych modułach poziomu 3 i rozwineły się do wersji CSS4:</p>
             <ul>
@@ -69,12 +69,14 @@
     </section>
 
     <section>
-        <h4>Co nowego?</h4>
+        <h3>Co nowego?</h3>
     </section>
 
     <section>
         <section>
-            <h4>Łatwiejsze tworzenie "zaokrąglonych rogów"</h4>
+            <h3>Łatwiejsze tworzenie "zaokrąglonych rogów"</h3>
+        </section>
+        <section>
             <img width="90%" height="90%" src="/images/border_radius.jpg">
         </section>
 
@@ -100,22 +102,22 @@
         </section>
 
         <section>
-            <iframe src="http://border-radius.com/" width="1000" height="600"></iframe>
-            http://border-radius.com/
+            <img  src="/images/wsparcie_border-radius.png">
         </section>
 
         <section>
-            <img  src="/images/wsparcie_border-radius.png">
+            <iframe src="http://border-radius.com/" width="1000" height="600"></iframe>
+            <p>http://border-radius.com/</p>
         </section>
     </section>
 
     <section>
         <section>
-            <h4>Łatwe wtorzenie cieni dla elementów</h4>
+            <h3>Łatwe wtorzenie cieni dla elementów</h3>
             <img width="80%" height="80%" src="/images/box-shadow_examples1.png">
         </section>
         <section>
-            <h4>cienie</h4>
+            <h3>cienie</h3>
             <img width="80%" height="80%" src="/images/box-shadow_examples2.png">
         </section>
         <section>
@@ -178,7 +180,7 @@
     <section>
 
         <section>
-            <p>Tworzenie przeźroczystości elementów</p>
+            <h3>Tworzenie przeźroczystości elementów</h3>
             <p>Dostępne wartości: </p>
             <p>0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1 | inherit.</p>
         </section>
@@ -218,7 +220,7 @@
 
     <section>
        <section>
-           <p>Tworzenie gradientów tła</p>
+           <h3>Tworzenie gradientów tła</h3>
            <p>linear-gradient</p>
            <ul>
                <li>Linear (liniowy).</li>
@@ -247,29 +249,55 @@
 
    <section>
        <section>
-           <p>Lepsze wykorzystanie obrazków</p>
-           <p>Na nasze szczęście CSS3 pozwala na bardziej zaawansowane manipulacje obrazkami, a właściwie grafikami.
+           <h3>Lepsze wykorzystanie obrazków</h3>
+           <p>CSS3 pozwala na bardziej zaawansowane manipulacje obrazkami, grafikami.
                W starych wersjach CSS (2 i 2.1) obrazki były wykorzystywane jako: tło (body, wylistowań, kontenerów, itp.), obrazek (na stronie).
-               CSS 3 rozszerza ich wykorzystanie do bardziej "zaawansowanych" modyfikacji 2D.</p>
+               CSS 3 rozszerza ich wykorzystanie do bardziej "zaawansowanych" modyfikacji 2D, 3D, animacji.</p>
        </section>
        <section>
+        <iframe width="1000" height="600" src="http://webdesignerwall.com/demo/css3-image-styles/">http://webdesignerwall.com/demo/css3-image-styles/</iframe>
+       </section>
+       <section>
+           <p>Rotacja obiektów</p>
+           <iframe width="1000" height="600" src="http://paulrhayes.com/experiments/pyramid/">http://paulrhayes.com/experiments/pyramid/</iframe>
+           https://github.com/fofr/paulrhayes.com-experiments/blob/master/pyramid/css/experiment.css
+       </section>
+       <section>
+           <p>transform-style: preserve-3d;</p>
+           <p>animation: spin 10s linear infinite;</p>
+           <p>transform-origin: 116px 200px 116px;</p>
+       </section>
+       <section>
+           transform: rotateY(180deg);
+           translate3d(x, y, z), translateZ(z)
+           Move the element in x, y and z, and just move the element in z. Positive z is towards the viewer. Unlike x and y, the z value cannot be a percentage.
+           scale3d(sx, sy, sz), scaleZ(sz)
+           Scale the element in x, y and z. The z scale affects the scaling along the z axis in transformed children.
+           rotateX(angle), rotateY(angle), rotate3d(x, y, z, angle),
+           The first two forms simply rotate the element about the horizontal and vertical axes. Angle units can be degrees (deg) radians (rad) or gradians (grad). The last form allows you to rotate the element around an arbitrary vector in 3D space; x, y and z should specify the unit vector you wish to rotate around (we’ll normalize it for you).
+           perspective(p)
+           This function allows you to put some perspective into the transformation matrix. For an explanation of p, see below. Normally perspective is applied via the -webkit-perspective property, but this function allows you to get a perspective effect for a single element, with something like:
 
+           -webkit-transform: perspective(500px) rotateY(20deg);
+
+           matrix3d(…)
+           This function allows you to specify the raw 4×4 homogeneous transformation matrix of 16 values in column-major order. Have fun with that!
+
+           We’ve also extended one other CSS transform property, and implemented the four other 3D-related properties described in the spec:
        </section>
    </section>
 
-
-
     <section>
         <section>
-            <p>Formularze i animacje</p>
+            <h3>Formularze i animacje</h3>
         </section>
         <section>
-
+            <iframe width="1000" height="600"  src="http://2011.beercamp.com/"></iframe>
+            http://2011.beercamp.com/
+        </section>
+        <section>
+            <iframe width="1000" height="600" src="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index3.html"></iframe>
+            http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index3.html
         </section>
     </section>
-
-
-       <section>
-           http://css3.pl/
-       </section>
 </template>

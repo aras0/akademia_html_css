@@ -14,7 +14,7 @@ if (Meteor.isClient) {
             progress: true,
             history: true,
             center: true,
-            themes: 'league',
+            themes: 'moon',
             transition: 'slide', // none/fade/slide/convex/concave/zoom
 
             // Optional reveal.js plugins
@@ -40,7 +40,7 @@ if (Meteor.isClient) {
             document.getElementById("rogi").style.borderTopRightRadius = "6px";
         },
         "click .bottom-left": function () {
-            document.getElementById("rogi").style.borderTopLeftRadius = "0p6x";
+            document.getElementById("rogi").style.borderTopLeftRadius = "0px";
             document.getElementById("rogi").style.borderTopRightRadius = "0x";
             document.getElementById("rogi").style.borderBottomRightRadius = "0px";
             document.getElementById("rogi").style.borderBottomLeftRadius = "6px";
