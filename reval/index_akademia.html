@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-   
+
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/scriptWebWorker.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scriptWebWorker.js"></script>
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -378,17 +378,21 @@
             <section>
                 <h3>Canvas + WebGL</h3>
             </section>
-			<section>
-			<b>WebGL</b> jest rozszerzeniem możliwości języka JavaScript, zapewniającym dostęp do trójwymiarowego API w przeglądarce internetowej.
+            <section>
+                <b>WebGL</b> jest rozszerzeniem możliwości języka JavaScript, zapewniającym dostęp do trójwymiarowego
+                API w przeglądarce internetowej.
 
-WebGL bazuje na OpenGL ES w wersji 2.0 i dostarcza programistom interfejs grafiki 3D. Korzysta z występującego w HTML 5 elementu Canvas i daje dostęp do modelu DOM.
+                WebGL bazuje na OpenGL ES w wersji 2.0 i dostarcza programistom interfejs grafiki 3D. Korzysta z
+                występującego w HTML 5 elementu Canvas i daje dostęp do modelu DOM.
 
-Aktualnie zaimplementowane jest w przeglądarkach Mozilla Firefox, Google Chrome i Apple Safari oraz Opera i Internet Explorer od wersji 11.
-			</br></br>
-			<h5>Biblioteki: </h5>
-Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była WebGLU. Inne to m.in: GLGE, C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
-			</section>
-		   <section>
+                Aktualnie zaimplementowane jest w przeglądarkach Mozilla Firefox, Google Chrome i Apple Safari oraz
+                Opera i Internet Explorer od wersji 11.
+                </br></br>
+                <h5>Biblioteki: </h5>
+                Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była WebGLU. Inne to m.in: GLGE,
+                C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
+            </section>
+            <section>
                 <iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800"
                         height="600"></iframe>
             </section>
@@ -405,7 +409,8 @@ Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była 
                 <iframe src="http://caniuse.com" width="800" height="600"></iframe>
             </section>
             <section>
-                Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy notuje 7.76%
+                Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień
+                dzisiejszy notuje 7.76%
                 na polskim rynku
                 <iframe src="http://html5please.com/" width="800" height="600"></iframe>
             </section>
@@ -459,7 +464,8 @@ Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była 
                     </tr>
                     </tbody>
                 </table>
-				<br>
+                <br>
+
                 <div>
                     <form style="font-size:22px">
                         Wymagana liczba:<br>
@@ -472,70 +478,74 @@ Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była 
                 </div>
             </section>
         </section>
-		<section>
-			<section>
+        <section>
+            <section>
                 <h3>WebSocket Html5</h3>
             </section>
-			<section>
-			 <h3>Zastosowania: </h3>
-• Komunikacja w czasie rzeczywistym
-• Streaming
-• Monitoring<br/><br/>
-            Websocket-architecture:<br/><img src="img/websocket-architecture.jpg" alt="websocket-architecture" height="350" width="500">
-			</section>
-			<section>
-				<h3>Http vs HTML5 WebSocket</h3>
-				<img src="img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
-			</section>
-			<section>
-                <!--iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe-->
+            <section>
+                <h3>Zastosowania: </h3>
+                • Komunikacja w czasie rzeczywistym
+                • Streaming
+                • Monitoring<br/><br/>
+                Websocket-architecture:<br/><img src="img/websocket-architecture.jpg" alt="websocket-architecture"
+                                                 height="350" width="500">
             </section>
-		</section>
+            <section>
+                <h3>Http vs HTML5 WebSocket</h3>
+                <img src="img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
+            </section>
+            <section>
+                <iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe>
+            </section>
+        </section>
         <section>
             <section>
                 <h3>Geolocation</h3>
-			</section>
-			 <section>
-				<iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe>
-			 </section>
-				<section>
-					<h3>Wielowątkowość - HTML5 web workers</h3>
-					<img src="img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
-				</section>
-				<section>
-				 <h3>Przykład Obliczanie silni: </h3></br>
-				  <form name="f1" style="font-size:12px">
-				  <input type="text" length="8" name="txt1"  value="200000000"><br>
-				  <input type="button" value="Start" onclick="runSta(txt1.value)">
-				    </form>
+            </section>
+            <section>
+                <iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe>
+            </section>
+            <section>
+                <h3>Wielowątkowość - HTML5 web workers</h3>
+                <img src="img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
+            </section>
+            <section>
+                <h3>Przykład Obliczanie silni: </h3></br>
+                <form name="f1" style="font-size:12px">
+                    <input type="text" length="8" name="txt1" value="200000000"><br>
+                    <input type="button" value="Start" onclick="runSta(txt1.value)">
+                </form>
 
-					</br>
-					<h5>Web workers:</h5>
- <div>
+                </br>
+                <h5>Web workers:</h5>
+
+                <div>
   <span>
    <input type="number" id="count" value="200000000"/>
    <button id="start">Start</button>
    <button id="terminate">Terminate</button>
   </span>
- </div>
- <div style="
+                </div>
+                <div style="
     height: 350px;
     overflow-y: scroll;
     overflow-x:hidden;">
-  <ol id="list">
-  </ol>
- </div>
-				</section>
+                    <ol id="list">
+                    </ol>
+                </div>
+            </section>
         </section>
         <section style="text-align: left;">
             <h1>CREDIT</h1>
+
             <p>
                 - <a href="https://www.websocket.org">https://www.websocket.org</a> <br/>
                 - <a href="http://alteredqualia.com/">http://alteredqualia.com/</a> <br/>
-				- <a href="http://html5please.com/">http://html5please.com/</a> <br/>
-				- <a href="http://www.w3schools.com">http://www.w3schools.com</a> <br/>
-				- <a href="http://caniuse.com">http://caniuse.com</a> <br/>
-				- <a href="http://maxheapsize.com/static/html5geolocationdemo.html">http://maxheapsize.com/static/html5geolocationdemo.html</a> <br/>
+                - <a href="http://html5please.com/">http://html5please.com/</a> <br/>
+                - <a href="http://www.w3schools.com">http://www.w3schools.com</a> <br/>
+                - <a href="http://caniuse.com">http://caniuse.com</a> <br/>
+                - <a href="http://maxheapsize.com/static/html5geolocationdemo.html">http://maxheapsize.com/static/html5geolocationdemo.html</a>
+                <br/>
             </p>
         </section>
     </div>
