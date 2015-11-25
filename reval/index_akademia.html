@@ -5,7 +5,7 @@
     <!--meta charset="utf-8"-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="iso-8859-2">
-    <title>reveal.js – The HTML Presentation Framework</title>
+    <title>Akadamia HTML5 & CSS3</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -19,12 +19,11 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-    <script src="js/canvas.js" type="text/javascript"/>
-    <script type="text/javascript" src="js/clay.min.js"/>
-    <script type="text/javascript" src="js/canvas3d.js"/>
+   
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
-
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/scriptWebWorker.js"></script>
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement('link');
@@ -481,9 +480,12 @@ Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była 
 			 <h3>Zastosowania: </h3>
 • Komunikacja w czasie rzeczywistym
 • Streaming
-• Monitoring
-
-
+• Monitoring<br/><br/>
+            Websocket-architecture:<br/><img src="img/websocket-architecture.jpg" alt="websocket-architecture" height="350" width="500">
+			</section>
+			<section>
+				<h3>Http vs HTML5 WebSocket</h3>
+				<img src="img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
 			</section>
 			<section>
                 <!--iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe-->
@@ -491,21 +493,49 @@ Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była 
 		</section>
         <section>
             <section>
-                <h3>WebSocket</h3>
-
                 <h3>Geolocation</h3>
+			</section>
+			 <section>
+				<iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe>
+			 </section>
+				<section>
+					<h3>Wielowątkowość - HTML5 web workers</h3>
+					<img src="img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
+				</section>
+				<section>
+				 <h3>Przykład Obliczanie silni: </h3></br>
+				  <form name="f1" style="font-size:12px">
+				  <input type="text" length="8" name="txt1"  value="200000000"><br>
+				  <input type="button" value="Start" onclick="runSta(txt1.value)">
+				    </form>
 
-                <h3>Wielowątkowość</h3>
-
-                <h3>http://html5readiness.com/</h3>
-            </section>
+					</br>
+					<h5>Web workers:</h5>
+ <div>
+  <span>
+   <input type="number" id="count" value="200000000"/>
+   <button id="start">Start</button>
+   <button id="terminate">Terminate</button>
+  </span>
+ </div>
+ <div style="
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x:hidden;">
+  <ol id="list">
+  </ol>
+ </div>
+				</section>
         </section>
         <section style="text-align: left;">
-            <h1>THE END</h1>
-
+            <h1>CREDIT</h1>
             <p>
-                - <a href="http://slides.com">Try the online editor</a> <br>
-                - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+                - <a href="https://www.websocket.org">https://www.websocket.org</a> <br/>
+                - <a href="http://alteredqualia.com/">http://alteredqualia.com/</a> <br/>
+				- <a href="http://html5please.com/">http://html5please.com/</a> <br/>
+				- <a href="http://www.w3schools.com">http://www.w3schools.com</a> <br/>
+				- <a href="http://caniuse.com">http://caniuse.com</a> <br/>
+				- <a href="http://maxheapsize.com/static/html5geolocationdemo.html">http://maxheapsize.com/static/html5geolocationdemo.html</a> <br/>
             </p>
         </section>
     </div>
