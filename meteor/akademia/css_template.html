@@ -11,11 +11,11 @@
         </ul>
     </section>
     <section>
-        <p>Cel i główne zastosowanie::</p>
+        <p>Cel i główne zastosowanie:</p>
         <ul>
             <li>Styl dla stron WWW.</li>
             <li>Rozdzielenie tresci od formatowania dla HTML.</li>
-            <li>Proste arkusze stylu dla XML</li>
+            <li>Proste arkusze stylu dla XML.</li>
         </ul>
     </section>
     <section>
@@ -26,17 +26,23 @@
 
         <section>
             <h4>Początki implementacji CSS1</h4>
-            <p>Została opublikowana pod koniec 1996.</p>
-            <p>Jedną z podstawowych właściwości CSS 1 jest kaskadowość.</p>
-            <p>Wszystko modyfikowane jest w jednym pliku.</p>
+                <ul>
+                    <li>Została opublikowana pod koniec 1996.</li>
+                    <li>Jedną z podstawowych właściwości CSS 1 jest kaskadowość.</li>
+                    <li>Wszystko modyfikowane jest w jednym pliku.</li>
+                </ul>
         </section>
+
         <section>
             <h4>CSS 2 rozwiniete do  CSS 2.1</h4>
-            <p>Rekomendacja CSS Level 2 to maj 1998.</p>
-            <p>Wprowadzone zostały nowe selektory i właściwości.</p>
-            <p>Oddzielono styl prezentacji dokumentów od ich zawartości.</p>
-            <p>CSS 2.1 wspomaga ustawienie (pozycjonowanie) treści, obsługuje ściągalne czcionki, wspiera układ graficzny tabeli, internalizacja, automatyczne liczniki, numeracji i niektóre właściwości dotyczące interfejsu użytkownika.</p>
-            <p>Dostosowanie specyfikacji do powszechnie stosowanych praktyk i rezygnacja z rzeczy, które się nie sprawdziły</p>
+            <ul>
+                <li>Rekomendacja CSS Level 2 to maj 1998.</li>
+                <li>Wprowadzone zostały nowe selektory i właściwości.</li>
+                <li>Oddzielono styl prezentacji dokumentów od ich zawartości.</li>
+                <li>CSS 2.1 wspomaga ustawienie (pozycjonowanie) treści, obsługuje ściągalne czcionki, wspiera układ graficzny tabeli, internalizacja, automatyczne liczniki, numeracji i niektóre właściwości dotyczące interfejsu użytkownika.</li>
+                <li>Dostosowanie specyfikacji do powszechnie stosowanych praktyk i rezygnacja z rzeczy, które się nie sprawdziły</li>
+            </ul>
+
         </section>
         <section>
             <h4>CSS 3</h4>
@@ -47,7 +53,8 @@
                 <li>Wprowadzenie nowych selektorów, pseudoklas i pseudoelementów.</li>
                 <li>Wprowadzenie nowych stylów i właściwości.</li>
             </ul>
-            <p>W czerwcu 2012 roku CSS Working Group miało opublikowanych ponad 50 różnych modułów</p>
+            <p>W czerwcu 2012 roku CSS Working Group </p>
+            <p>miało opublikowanych ponad 50 różnych modułów</p>
         </section>
         <section>
             <h4>CSS 4</h4>
@@ -60,49 +67,56 @@
             </ul>
         </section>
     </section>
+
     <section>
-        <section>
-            <h4>Co nowego?</h4>
-        </section>
+        <h4>Co nowego?</h4>
     </section>
+
     <section>
         <section>
-            <h4>zaokrąglone rogi</h4>
+            <h4>Łatwiejsze tworzenie "zaokrąglonych rogów"</h4>
             <img width="90%" height="90%" src="/images/border_radius.jpg">
         </section>
-        <section>
 
-            <p>{stala}border-radius: promień{/stala}</p>
-            <code>
+        <section>
+            <p>border-radius: promień</p>
                 <ul>
                     <li><a class="top-lef">border-top-left-radius:6px; - lewy górny róg</a></li>
                     <li><a class="top-right">border-top-right-radius:6px; - prawy górny róg</a></li>
                     <li><a class="bottom-left">border-bottom-left-radius:6px; - lewy dolny róg</a></li>
                     <li><a class="bottom-right">border-bottom-right-radius:6px; - prawy dolny róg</a></li>
-                    <li><a class="border-radius">border-radius:20px 5px; - wszystkie rogi: 20px na X, 5px na Y</a></li>
+                    <li><a class="border-radius">border-radius:20px 5px; - wszystkie: 20px X, 5px Y</a></li>
                 </ul>
-            </code>
             <div id="rogi" class="rogi"> example </div>
         </section>
+
         <section>
-            <code>-moz-border-radius: 12px;
-            -webkit-border-radius: 12px;</code>
-            <p>nie wszystkie przeglądarki wpierały border-radius</p>
             <ul>
+                <li>-moz-border-radius: 12px;</li>
+                <li>-webkit-border-radius: 12px;</li>
                 <li>-moz- dla Firefoksa,</li>
                 <li>-webkit- dla Safari i Chrome</li>
             </ul>
         </section>
+
         <section>
-            <img  src="/images/wsparcie_border-radius.jpg">
+            <iframe src="http://border-radius.com/" width="1000" height="600"></iframe>
+            http://border-radius.com/
         </section>
 
-        <section>http://border-radius.com/</section>
+        <section>
+            <img  src="/images/wsparcie_border-radius.png">
+        </section>
     </section>
+
     <section>
         <section>
+            <h4>Łatwe wtorzenie cieni dla elementów</h4>
+            <img width="80%" height="80%" src="/images/box-shadow_examples1.png">
+        </section>
+        <section>
             <h4>cienie</h4>
-            <img width="90%" height="90%" src="/images/box-shadow_examples.png">
+            <img width="80%" height="80%" src="/images/box-shadow_examples2.png">
         </section>
         <section>
             <p>box-shadow</p>
@@ -110,86 +124,152 @@
         </section>
         <section id="outside">
             <ul>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="box-shadow">box-shadow: 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="box-shadow2">box-shadow: 10px 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="box-shadow3">box-shadow: 10px 10px 0 10px #666;</a></li>
-                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="box-shadow4">box-shadow: 0 0 10px 10px #FF0000;</a></li>
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                    <li><a class="box-shadow">box-shadow: 10px 10px #666;</a></li>
+                </span>
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                    <li><a class="box-shadow2">box-shadow: 10px 10px 10px #666;</a></li>
+                </span>
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                    <li><a class="box-shadow3">box-shadow: 10px 10px 0 10px #666;</a></li>
+                </span>
+                <span class="">
+                    <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                    <li><a class="box-shadow4">box-shadow: 0 0 10px 10px #FF0000;</a></li>
+                </span>
             </ul>
             <div id="cien" class="cien"> example </div>
         </section>
         <section>
-            <p>inset-shadow</p>
+            <p>inset box-shadow</p>
             <p>Cień wewnętrzny</p>
         </section>
         <section id="inside">
             <ul>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="inset-shadow">box-shadow: inset 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="inset-shadow2">box-shadow: inset 10px 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="inset-shadow3">box-shadow: inset 10px 10px 0 10px #666;</a></li>
-                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="inset-shadow4">box-shadow: inset 0 0 10px 10px #FF0000;</a></li>
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                    <li><a class="inset-shadow">box-shadow: inset 10px 10px #666;</a></li>
+                </span>
+
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
+                    <li><a class="inset-shadow2">box-shadow: inset 10px 10px 10px #666;</a></li>
+                </span>
+
+                <span class="">
+                    <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                    <li><a class="inset-shadow3">box-shadow: inset 10px 10px 0 10px #666;</a></li>
+                </span>
+
+                <span class="">
+                    <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
+                    <li><a class="inset-shadow4">box-shadow: inset 0 0 10px 10px #FF0000;</a></li>
+                </span>
             </ul>
             <div id="cien2" class="cien2"> example </div>
         </section>
         <section>
-            <img  src="/images/wsparcie_border-radius.jpg">
+            <img  src="/images/wsparcie_border-radius.png">
         </section>
     </section>
     <section>
+
         <section>
+            <p>Tworzenie przeźroczystości elementów</p>
+            <p>Dostępne wartości: </p>
+            <p>0 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 1 | inherit.</p>
         </section>
-        <section id="inside">
+
+        <section>
             <ul>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="inset-shadow">box-shadow: inset 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia oraz kolor cienia.</li>
-                <li><a class="inset-shadow2">box-shadow: inset 10px 10px 10px #666;</a></li>
-                <li>odsunięcie w poziomie, pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="inset-shadow3">box-shadow: inset 10px 10px 0 10px #666;</a></li>
-                <li>definiujemy zerowe odsunięcie w poziomie i pionie, wielkość rozmycia, rozciągnięcie (nadlewkę) oraz kolor cienia.</li>
-                <li><a class="inset-shadow4">box-shadow: inset 0 0 10px 10px #FF0000;</a></li>
+                <span class="">
+                    <li>opacity:0.2;</li>
+                    <div id="przezroczystosc" class="przezroczystosc"> example </div>
+                </span>
+                <span class="">
+                    <li>opacity:0.6;</li>
+                    <div id="przezroczystosc2" class="przezroczystosc2"> example </div>
+                </span>
+                <span class="">
+                    <li>opacity:0.9;</li>
+                    <div id="przezroczystosc3" class="przezroczystosc3"> example </div>
+                </span>
+                <span class="">
+                    <li>opacity:inherit;</li>
+                    <div id="przezroczystosc4" class="przezroczystosc4"> example </div>
+                </span>
+                <span class="">
+                    <p>zastosowanie modelu RGBA </p>
+                    <li>background-color: rgba(100,125,153,.5)</li>
+                    <div id="przezroczystosc5" class="przezroczystosc5"> example </div>
+                </span>
             </ul>
-            <div id="cien2" class="cien2"> example </div>
+            <!--http://piwnicait.blogspot.com/2010/10/css3-kolejne-przykady.html
+            http://piwnicait.blogspot.com/2010/09/rzut-oka-na-css3.html-->
         </section>
-
-    </section>
-
-    <section>
-        Najwa?niejsze r?nice mi?dzy selektorami CSS 2 i selektorami opisanymi w niniejszym dokumencie to:
-
-        została zmieniona lista podstawowych definicji (selektor, grupa selektor?w, selektor prosty itd.). W szczeg?lno?ci to, co w CSS 2 by?o nazywane selektorem prostym, w tej specyfikacji jest nazywane sekwencj? selektor?w prostych, a termin ?selektor prosty? oznacza teraz poszczeg?lne elementy tej sekwencji.
-        zezwolono na stosowanie elementu przestrzeni nazw w selektorach typu, selektorze uniwersalnym i selektorach atrybut?w
-        został dodany nowy kombinator
-        nowe selektory proste, w tym selektory atrybut?w z dopasowywaniem cz?ci ?a?cuch?w i nowe pseudoklasy
-        nowe pseudoelementy oraz wprowadzenie konwencji zapisu pseudoelement?w przy u?yciu notacji ze znakami ?::?
-        zosta?a napisana gramatyka
-        profile do dodania do specyfikacji, w kt?re wcielono selektory oraz zdefiniowano zestaw selektor?w, kt?re s? rzeczywi?cie obs?ugiwane przez ka?d? specyfikacj?
-        selektory s? teraz modu?em CSS 3, a ich specyfikacja stanowi niezale?ny dokument; mo?na si? do niej odwo?ywa? z innych specyfikacji niezale?nie od CSS
-        specyfikacji towarzyszy dedykowany zestaw test?w
-    </section>
-    <section>
-        <section>bbbbb</section>
-        <section>cccc</section>
-    </section>
-    <section>
-        <h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-                        function linkify( selector ) {
-                        if( supports3DTransforms ) {
-
-                        var nodes = document.querySelectorAll( selector );
-                        }
-                        }
-                    </code></pre>
-    </section>
+        <section>
+            <iframe src="http://www.css3maker.com/css-3-rgba.html" width="1000" height="600"></iframe>
+            <p>http://www.css3maker.com/css-3-rgba.html</p>
+        </section>
+   </section>
 
     <section>
+       <section>
+           <p>Tworzenie gradientów tła</p>
+           <p>linear-gradient</p>
+           <ul>
+               <li>Linear (liniowy).</li>
+               <li>Radial (kołowy).</li>
+           </ul>
+       </section>
+       <section>
+           <span class="">
+               <li>background: linear-gradient(black, blue);</li>
+               <div id="linear1" class="linear1"> example </div>
+           </span>
+           <span class="">
+               <li>background: linear-gradient(45deg, white, blue);</li>
+               <div id="linear3" class="linear3"> example </div>
+           </span>
+           <span class="">
+               <li>background: radial-gradient(circle, #00f, #000);</li>
+               <div id="radial1" class="radial1"> example </div>
+           </span>
+           <span class="">
+               <li>background: radial-gradient(200px 200px ellipse, violet 30px, indigo 60px, blue 90px, green 120px, yellow 150px, orange 180px, red 10px, #000);</li>
+               <div id="tecza" class="tecza"> example </div>
+           </span>
+       </section>
+   </section>
+
+   <section>
+       <section>
+           <p>Lepsze wykorzystanie obrazków</p>
+           <p>Na nasze szczęście CSS3 pozwala na bardziej zaawansowane manipulacje obrazkami, a właściwie grafikami.
+               W starych wersjach CSS (2 i 2.1) obrazki były wykorzystywane jako: tło (body, wylistowań, kontenerów, itp.), obrazek (na stronie).
+               CSS 3 rozszerza ich wykorzystanie do bardziej "zaawansowanych" modyfikacji 2D.</p>
+       </section>
+       <section>
+
+       </section>
+   </section>
+
+
+
+    <section>
+        <section>
+            <p>Formularze i animacje</p>
+        </section>
+        <section>
+
+        </section>
     </section>
+
+
+       <section>
+           http://css3.pl/
+       </section>
 </template>

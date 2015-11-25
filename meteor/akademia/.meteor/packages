@@ -21,3 +21,4 @@ insecure                # Allow all DB writes from clients (for prototyping)
 neo:reveal-js
 philippspo:reactive-canvas
 mizzao:jquery-ui
+twbs:bootstrap

@@ -28,6 +28,68 @@
     box-shadow: 3px 3px #666;
 }
 
-ul > li > a {
+span li a  {
     cursor: pointer;
+}
+
+.przezroczystosc {
+     background-color: rgb(255,0,0);
+     opacity:0.2;
+     font-weight:bolder;
+     color:blue;
+ }
+.przezroczystosc2 {
+    background-color: rgb(255,0,0);
+    opacity:0.6;
+    font-weight:bolder;
+    color:blue;
+}
+
+.przezroczystosc3 {
+    background-color: rgb(255,0,0);
+    opacity:0.9;
+    font-weight:bolder;
+    color:blue;
+}
+
+.przezroczystosc4 {
+    background-color: rgb(255,0,0);
+    opacity:inherit;
+    font-weight:bolder;
+    color:blue;
+}
+
+.przezroczystosc5 {
+    background-image: url("public/images/images.jpg");
+    background-color: rgba(100,125,153,.5);
+    font-weight:bolder;
+    color:blue;
+}
+
+#linear1 {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    background: linear-gradient(black, blue);
+}
+
+#linear3 {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    background: linear-gradient(45deg, white, blue);
+}
+
+#radial1 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: radial-gradient(circle, #00f, #000);
+}
+
+#tecza {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    background: radial-gradient(200px 200px ellipse, violet 30px, indigo 60px, blue 90px, green 120px, yellow 150px, orange 180px, red 10px, #000);
 }

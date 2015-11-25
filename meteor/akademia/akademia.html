@@ -1,64 +1,91 @@
 ﻿<head>
-  <!--meta charset="utf-8"-->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!--meta charset="iso-8859-2"-->
-  <title>akademia</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <!--link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css"-->
-  <link rel="stylesheet" href="css/theme/night.css" id="theme"/>
-
+    <!--meta charset="utf-8"-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--meta charset="iso-8859-2"-->
+    <title>akademia</title>
+    <!--link rel="stylesheet" href="css/bootstrap.css"-->
+    <!--link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css"-->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/theme/league.css" id="theme"/>
     <!--link rel="stylesheet" href="css/reveal.css"-->
     <!--link rel="stylesheet" href="css/theme/black.css" id="theme"-->
-
-
-
-
-    <!--[if lt IE 9]>
-  <script src="lib/js/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body onload="init()" onresize="windowResize()">
-  {{> menu}}
-  {{> reveal}}
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="../../reval/js/reveal.js"></script>
-  <script type="text/javascript" src="server/js/canvas3d.js"></script>
+<link rel="stylesheet" href="css/theme/league.css" id="theme"/>
 
+{{> reveal}}
+
+<script src="lib/js/head.min.js"></script>
+<script src="../../reval/js/reveal.js"></script>
+<script type="text/javascript" src="server/js/canvas3d.js"></script>
+<!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
 </body>
 
-
-<template name="menu">
-  <!--div class="ui menu example" id="menu">
-    <a class="item" href="{{pathFor 'home'}}">Home</a>
-    <a class="item" href="{{pathFor 'barebones'}}">Barebones</a>
-    <div class="right menu">
-      {{> transitionSelect}}
-      {{> themeSelect}}
-    </div>
-  </div-->
-</template>
-
 <template name="reveal">
-  <div class="reveal">
-    <div class="slides">
-        <section>
-            <img  width="426" height="315" src="/images/html5-css3.png">
-        </section>
-      <section>jakiś ogólny wstęp</section>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h3> HTML5 i CSS3</h3>
 
-      {{> html_template}}
-      {{> css_template}}
-      {{> example_app_template}}
-      {{> exercise_template}}
+                <p>
+                    <small>Created by <a href="">Sara Czeluśniak</a> and <a href="">Krzysztof Lichorad</a></small>
+                </p>
+                <img width="660" height="450" src="/images/html5-css3.png">
+            </section>
 
+            <section>
+                <ul>Spis treści
+                    <li>HTML5
+                  <span style="font-size: medium;">
+                    <ul>
+                        <li><a href="">Historia HTML</a></li>
+                        <li><a href="">Co nowego w HTML 5 ?</a></li>
+                        <li><a href="">Elementy usunięte w HTML5</a></li>
+                        <li><a href="">Canvas</a></li>
+                        <li><a href="">Canvas + WebGL</a></li>
+                        <li><a href="">Co mogę użyć ??</a></li>
+                        <li><a href="">Nowa era formularzy</a></li>
+                        <li><a href="">WebSocket Html5</a></li>
+                        <li><a href="">Inne</a></li>
+                    </ul>
+                      </span>
+                    </li>
+
+                    <li>CSS3
+                  <span style="font-size: medium;">
+                  <ul>
+                      <li><a href="">Cel i główne zastosowanie:</a></li>
+                      <li><a href="">Historia</a></li>
+                      <li><a href="">Co nowego?</a>
+                          <ul>
+                              <li>Łatwe wtorzenie cieni dla elementów</li>
+                              <li>Tworzenie przeźroczystości elementów</li>
+                              <li>Tworzenie gradientów tła</li>
+                              <li>Lepsze wykorzystanie obrazków</li>
+                          </ul>
+                      </li>
+                      <li><a href="">Formularze i animacje</a></li>
+                  </ul>
+                  </span>
+                    </li>
+                    <li><a href="">Przykłady aplikacji</a></li>
+                    <li><a href="">Have Fun</a></li>
+                </ul>
+            </section>
+
+            {{> html_template}}
+            {{> css_template}}
+            {{> example_app_template}}
+            {{> exercise_template}}
+            {{> end}}
+        </div>
     </div>
-  </div>
-
 </template>

@@ -13,7 +13,8 @@
             <h3>Historia</h3>
         </section>
         <section>
-            <span style="font-size: 80%;">
+            <span style="font-size: medium;">
+            <p>
                 <ul>
                     <li>HTML 5 jest to konkurencyjna specyfikacja w stosunku do specyfikacji XHTML 2, której rozwój
                         został porzucony 2 lipca 2009 roku - wsparcie wszystkich środowisk i producentów
@@ -34,6 +35,7 @@
                         został na rok 2022!
                     </li>
                 </ul>
+            </p>
             </span>
         </section>
         <section>
@@ -94,20 +96,20 @@
         <section>
             <p>
             <ul>
-            <li>Doctype i kodowanie znaków: <pre><code>
-&lt; !DOCTYPE html>
-&lt;html>
-&lt;head>
-&lt;meta charset="UTF-8">
-&lt;title>Title of the document&lt;/title>
-&lt;/head>
+                <li>Doctype i kodowanie znaków: <pre><code>
+    &lt; !DOCTYPE html>
+    &lt;html>
+    &lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>Title of the document&lt;/title>
+    &lt;/head>
 
-&lt;body>
-Content of the document......
-&lt;/body>
+    &lt;body>
+    Content of the document......
+    &lt;/body>
 
-&lt;/html> </code></pre>
-            </li>
+    &lt;/html> </code></pre>
+                </li>
             </ul>
             </p>
         </section>
@@ -221,10 +223,10 @@ Content of the document......
         </section>
         <section>
             <div style="text-align:center">
-                <button onclick="playPause()">Play/Pause</button>
-                <button onclick="makeBig()">Big</button>
-                <button onclick="makeSmall()">Small</button>
-                <button onclick="makeNormal()">Normal</button>
+                <button class="btn btn-success" onclick="playPause()">Play/Pause</button>
+                <button class="btn btn-info" onclick="makeBig()">Big</button>
+                <button class="btn btn-primary" onclick="makeSmall()">Small</button>
+                <button class="btn btn-default scrollable-btn-group-prev" onclick="makeNormal()">Normal</button>
                 <br><br>
                 <video id="video1" width="520">
                     <source src="/img/syg.mp4" type="video/mp4">
@@ -257,19 +259,53 @@ Content of the document......
     </section>
     <section>
         <section>
-            <h3>Czy mogę użyć ??</h3>
-        </section>
-        <section>
-            <iframe src="http://caniuse.com" width="800" height="600"></iframe>
-        </section>
-    </section>
-    <section>
-        <section>
             <h3>Canvas</h3>
         </section>
-        <section> sdvsd
-            <canvas id="canvas">
+        <section>
+            Canvas — element języka HTML wprowadzony w HTML 5 pozwalający na dynamiczne, skryptowe renderowanie
+            kształtów i obrazów bitmapowych. Dzięki wprowadzeniu obiektu canvas możliwe stało się tworzenie
+            dynamicznych dwu- i trójwymiarowych animacji czy gier działających w przeglądarkach bez dodatkowych
+            wtyczek.
+        </section>
+        <section>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
             </canvas>
+<pre><code>
+    &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.&lt;/canvas>
+
+    &lt;script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.strokeStyle="red";
+    ctx.stroke();
+    &lt;/script>
+</code></pre>
+        </section>
+        <section>
+            <canvas id="image1" width="400" height="400" style="border:1px solid #d3d3d3;">
+                Twoja przeglądarka nie wspiera elementu canvas!
+                Pobierz Internet Explorer 9 lub nowszą wersję!
+            </canvas>
+        </section>
+    </section>
+
+    <section>
+        <section>
+            <h3>Canvas + WebGL</h3>
+        </section>
+        <section>
+            <b>WebGL</b> jest rozszerzeniem możliwości języka JavaScript, zapewniającym dostęp do trójwymiarowego API w przeglądarce internetowej.
+
+            WebGL bazuje na OpenGL ES w wersji 2.0 i dostarcza programistom interfejs grafiki 3D. Korzysta z występującego w HTML 5 elementu Canvas i daje dostęp do modelu DOM.
+
+            Aktualnie zaimplementowane jest w przeglądarkach Mozilla Firefox, Google Chrome i Apple Safari oraz Opera i Internet Explorer od wersji 11.
+
+            <h5>Biblioteki: </h5>
+            Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była WebGLU. Inne to m.in: GLGE, C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
         </section>
         <section>
             <iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800"
@@ -282,27 +318,108 @@ Content of the document......
     </section>
     <section>
         <section>
-            <h3>WebGL???</h3>
+            <h3>Co mogę użyć ??</h3>
         </section>
         <section>
-            <h3>WebGL</h3>
+            <iframe src="http://caniuse.com" width="800" height="600"></iframe>
+        </section>
+        <section>
+            Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy notuje 7.76%
+            na polskim rynku
+            <iframe src="http://html5please.com/" width="800" height="600"></iframe>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>Nowa era formularzy</h3>
+        </section>
+        <section>
+            <table class="w3-table-all notranslate" style="font-size:22px">
+                <tbody>
+                <tr>
+                    <th style="width:20%">Attribute</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>Specifies that an input field should be disabled</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">max</td>
+                    <td>Specifies the maximum value for an input field</td>
+                </tr>
+                <tr>
+                    <td>maxlength</td>
+                    <td>Specifies the maximum number of character for an input field</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">min</td>
+                    <td>Specifies the minimum value for an input field</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">pattern</td>
+                    <td>Specifies a regular expression to check the input value against</td>
+                </tr>
+                <tr>
+                    <td>readonly</td>
+                    <td>Specifies that an input field is read only (cannot be changed)</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">required</td>
+                    <td>Specifies that an input field is required (must be filled out)</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Specifies the width (in characters) of an input field</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>Specifies the default value for an input field</td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+            <div>
+                <form style="font-size:22px">
 
+                    <div class="col-sm-10">
+                        <label for="number"> Wymagana liczba:</label>
+                        <input class="form-control" type="number" name="requiredNumber" required="true" autofocus>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <label for="email"> Email:</label>
+                        <input class="form-control" type="email" name="email">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h3>WebSocket Html5</h3>
+        </section>
+        <section>
+            <h3>Zastosowania: </h3>
+            • Komunikacja w czasie rzeczywistym
+            • Streaming
+            • Monitoring
+
+
+        </section>
+        <section>
+            <!--iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe-->
+        </section>
+    </section>
+    <section>
+        <section>
             <h3>WebSocket</h3>
 
             <h3>Geolocation</h3>
 
             <h3>Wielowątkowość</h3>
-        </section>
-    </section>
-    <section>
-        <h2>Wiem, że coś istnieje w HTML5, ale nie wiem czy mogę tego bezpiecznie używać</h2>
-    </section>
-    <section style="text-align: left;">
-        <h1>THE END</h1>
 
-        <p>
-            - <a href="http://slides.com">Try the online editor</a> <br>
-            - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-        </p>
+            <h3>http://html5readiness.com/</h3>
+        </section>
     </section>
 </template>
