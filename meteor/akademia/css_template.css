@@ -93,3 +93,7 @@ span li a  {
     margin: auto;
     background: radial-gradient(200px 200px ellipse, violet 30px, indigo 60px, blue 90px, green 120px, yellow 150px, orange 180px, red 10px, #000);
 }
+
+.html5badge {
+    color:red;
+}

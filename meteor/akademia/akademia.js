@@ -1,4 +1,6 @@
 if (Meteor.isClient) {
+    var worker;
+
     Meteor.startup(function () {
         Reveal.initialize();
     });
@@ -117,16 +119,46 @@ if (Meteor.isClient) {
                 context.closePath;
                 context.fill();
             }
+        },
+        "click #runSta": function (number) {
+            function sFact(num) {
+                var rval = 1;
+                for (var i = 2; i <= num; i++)
+                    rval = rval * i;
+                return rval;
+            }
+            number = document.getElementById('text');
+            alert(sFact(number.value));
+        },
+        "click #start": function(){
+            $('#list').html("");
+            var count = $('#count').val();
+            var settings = {};
+            settings.count = parseInt(count);
+            worker = new Worker('js/factorial.js');
+            worker.onmessage = function(event){
+                var list = event.data;
+                $.each(list, function(){
+                    printNumber(this);
+                })
+            };
+            worker.postMessage(settings);
+        },
+        "click #terminate": function() {
+            if (worker) {
+                worker.terminate();
+            }
         }
     });
 
+    function printNumber(number){
+        $('#list').append('<li>'+number+'</li>');
+    }
 }
-
 
 if (Meteor.isServer) {
     Meteor.startup(function () {
 
         // code to run on server at startup
     });
-
 }

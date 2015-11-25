@@ -13,7 +13,7 @@
             <h3>Historia</h3>
         </section>
         <section>
-            <span style="font-size: medium;">
+            <span style="font-size: 80%;">
             <p>
                 <ul>
                     <li>HTML 5 jest to konkurencyjna specyfikacja w stosunku do specyfikacji XHTML 2, której rozwój
@@ -35,7 +35,7 @@
                         został na rok 2022!
                     </li>
                 </ul>
-            </p>
+                </p>
             </span>
         </section>
         <section>
@@ -94,9 +94,9 @@
             <h3>Co nowego w HTML 5 ?</h3>
         </section>
         <section>
-            <p>
-            <ul>
-                <li>Doctype i kodowanie znaków: <pre><code>
+
+            <div width="800" height="600">
+                Doctype i kodowanie znaków:<pre class="prettyprint lang-html linenums"><code height="600" width="800">
     &lt; !DOCTYPE html>
     &lt;html>
     &lt;head>
@@ -108,10 +108,9 @@
     Content of the document......
     &lt;/body>
 
-    &lt;/html> </code></pre>
-                </li>
-            </ul>
-            </p>
+    &lt;/html></code></pre>
+            </div>
+
         </section>
         <section>
             <p>
@@ -271,6 +270,7 @@
             <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
                 Your browser does not support the HTML5 canvas tag.
             </canvas>
+            <div width="800" height="600">
 <pre><code>
     &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
     Your browser does not support the HTML5 canvas tag.&lt;/canvas>
@@ -284,6 +284,7 @@
     ctx.stroke();
     &lt;/script>
 </code></pre>
+            </div>
         </section>
         <section>
             <canvas id="image1" width="400" height="400" style="border:1px solid #d3d3d3;">
@@ -293,19 +294,23 @@
         </section>
     </section>
 
-    <section>
+   <section>
         <section>
             <h3>Canvas + WebGL</h3>
         </section>
         <section>
-            <b>WebGL</b> jest rozszerzeniem możliwości języka JavaScript, zapewniającym dostęp do trójwymiarowego API w przeglądarce internetowej.
+            <b>WebGL</b> jest rozszerzeniem możliwości języka JavaScript, zapewniającym dostęp do trójwymiarowego API w
+            przeglądarce internetowej.
 
-            WebGL bazuje na OpenGL ES w wersji 2.0 i dostarcza programistom interfejs grafiki 3D. Korzysta z występującego w HTML 5 elementu Canvas i daje dostęp do modelu DOM.
+            WebGL bazuje na OpenGL ES w wersji 2.0 i dostarcza programistom interfejs grafiki 3D. Korzysta z
+            występującego w HTML 5 elementu Canvas i daje dostęp do modelu DOM.
 
-            Aktualnie zaimplementowane jest w przeglądarkach Mozilla Firefox, Google Chrome i Apple Safari oraz Opera i Internet Explorer od wersji 11.
+            Aktualnie zaimplementowane jest w przeglądarkach Mozilla Firefox, Google Chrome i Apple Safari oraz Opera i
+            Internet Explorer od wersji 11.
 
             <h5>Biblioteki: </h5>
-            Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była WebGLU. Inne to m.in: GLGE, C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
+            Istnieje kilka bibliotek pozwalających na korzystanie z WebGL. Pierwszą była WebGLU. Inne to m.in: GLGE,
+            C3DL, Copperlicht, SpiderGL, SceneJS czy THREE.JS.
         </section>
         <section>
             <iframe src="http://alteredqualia.com/xg/examples/animation_physics_ammo.html" width="800"
@@ -324,7 +329,8 @@
             <iframe src="http://caniuse.com" width="800" height="600"></iframe>
         </section>
         <section>
-            Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy notuje 7.76%
+            Przykładowo dla tagu "video" brakuje wsparcia między innymi w przeglądarce IE8, która na dzień dzisiejszy
+            notuje 7.76%
             na polskim rynku
             <iframe src="http://html5please.com/" width="800" height="600"></iframe>
         </section>
@@ -379,18 +385,15 @@
                 </tbody>
             </table>
             <br>
+
             <div>
                 <form style="font-size:22px">
-
-                    <div class="col-sm-10">
-                        <label for="number"> Wymagana liczba:</label>
-                        <input class="form-control" type="number" name="requiredNumber" required="true" autofocus>
-                    </div>
-
-                    <div class="col-sm-10">
-                        <label for="email"> Email:</label>
-                        <input class="form-control" type="email" name="email">
-                    </div>
+                    Wymagana liczba:<br>
+                    <input type="number" name="requiredNumber" required="true" autofocus>
+                    <br>
+                    Email:<br>
+                    <input type="email" name="email">
+                    <br>
                 </form>
             </div>
         </section>
@@ -403,23 +406,50 @@
             <h3>Zastosowania: </h3>
             • Komunikacja w czasie rzeczywistym
             • Streaming
-            • Monitoring
-
-
+            • Monitoring<br/><br/>
+            Websocket-architecture:<br/><img src="img/websocket-architecture.jpg" alt="websocket-architecture"
+                                             height="350" width="500">
         </section>
         <section>
-            <!--iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe-->
+            <h3>Http vs HTML5 WebSocket</h3>
+            <img src="img/http-versus-html5ws_2.png" alt="http-versus-html5ws_2" height="350" width="800">
+        </section>
+        <section>
+            <iframe src="https://www.websocket.org/demos/racer/run/" width="800" height="600"></iframe>
         </section>
     </section>
     <section>
         <section>
-            <h3>WebSocket</h3>
-
             <h3>Geolocation</h3>
+        </section>
+        <section>
+            <iframe src="http://maxheapsize.com/static/html5geolocationdemo.html" width="800" height="600"></iframe>
+        </section>
+        <section>
+            <h3>Wielowątkowość - HTML5 web workers</h3>
+            <img src="img/HTML5-WEBWORKER.png" alt="HTML5-WEBWORKER">
+        </section>
+        <section>
+            <h3>Przykład Obliczanie silni: </h3>
 
-            <h3>Wielowątkowość</h3>
+            <form name="f1" style="font-size:12px">
+                <input id="text" type="text" length="8" name="txt1" value="200000000">
+                <input id="runSta" type="button" value="Start">
+            </form>
 
-            <h3>http://html5readiness.com/</h3>
+            <h5>Web workers:</h5>
+
+            <div>
+              <span>
+                   <input type="number" id="count" value="200000000"/>
+                   <button id="start">Start</button>
+                   <button id="terminate">Terminate</button>
+              </span>
+            </div>
+            <div style="height: 350px;overflow-y: scroll;overflow-x:hidden;">
+                <ol id="list">
+                </ol>
+            </div>
         </section>
     </section>
 </template>
