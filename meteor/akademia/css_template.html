@@ -1,7 +1,6 @@
 <template name="css_template" xmlns="http://www.w3.org/1999/html">
     <section>
         <img  src="/images/css.jpg">
-        <!--a href="images/css3.jpg">like this</a-->
     </section>
     <section>
         <ul>
@@ -10,7 +9,7 @@
             <li><span>Arkusz stylów CSS to lista dyrektyw (tzw. reguł) ustalających w jaki sposób ma został wyświetlana przez przeglądarki internetową zawartość wybranego elementu</span></li>
         </ul>
     </section>
-    <section>
+    <section id="cel">
         <p>Cel i główne zastosowanie:</p>
         <ul>
             <li>Styl dla stron WWW.</li>
@@ -19,7 +18,7 @@
         </ul>
     </section>
     <section>
-        <section>
+        <section id="historyCSS">
             <h3>Historia</h3>
             <p>Początki CSS: 1994</p>
         </section>
@@ -68,13 +67,14 @@
         </section>
     </section>
 
-    <section>
+    <section id="newCSS">
         <h3>Co nowego?</h3>
     </section>
 
     <section>
         <section>
-            <h3>Łatwiejsze tworzenie "zaokrąglonych rogów"</h3>
+            <h3>Łatwiejsze tworzeni<br/>
+                "zaokrąglonych rogów"</h3>
         </section>
         <section>
             <img width="90%" height="90%" src="/images/border_radius.jpg">
@@ -113,12 +113,8 @@
 
     <section>
         <section>
-            <h3>Łatwe wtorzenie cieni dla elementów</h3>
+            <h3>Łatwe wtorzenie <br/> cieni dla elementów</h3>
             <img width="80%" height="80%" src="/images/box-shadow_examples1.png">
-        </section>
-        <section>
-            <h3>cienie</h3>
-            <img width="80%" height="80%" src="/images/box-shadow_examples2.png">
         </section>
         <section>
             <p>box-shadow</p>
@@ -209,11 +205,9 @@
                     <div id="przezroczystosc5" class="przezroczystosc5"> example </div>
                 </span>
             </ul>
-            <!--http://piwnicait.blogspot.com/2010/10/css3-kolejne-przykady.html
-            http://piwnicait.blogspot.com/2010/09/rzut-oka-na-css3.html-->
         </section>
         <section>
-            <!--iframe src="http://www.css3maker.com/css-3-rgba.html" width="1000" height="600"></iframe-->
+            <iframe src="http://www.css3maker.com/css-3-rgba.html" width="1000" height="600"></iframe>
             <p>http://www.css3maker.com/css-3-rgba.html</p>
         </section>
    </section>
@@ -255,48 +249,47 @@
                CSS 3 rozszerza ich wykorzystanie do bardziej "zaawansowanych" modyfikacji 2D, 3D, animacji.</p>
        </section>
        <section>
-            <!--iframe width="1000" height="600" src="http://webdesignerwall.com/demo/css3-image-styles/">http://webdesignerwall.com/demo/css3-image-styles/</iframe-->
+            <iframe width="1000" height="600" src="http://webdesignerwall.com/demo/css3-image-styles/">http://webdesignerwall.com/demo/css3-image-styles/</iframe>
+           http://webdesignerwall.com/demo/css3-image-styles/">http://webdesignerwall.com/demo/css3-image-styles
+       </section>
+       <section>
+           <ul>
+               <li>border-radius: ... ;</li>
+               <li>box-shadow: inset ... ... ... rgba(...,...,...,0.);</li>
+               <li>background: linear-gradient(...);</li>
+               <li>background: radial-gradient(...)(</li>
+               <li>background: repeating-linear-gradient(...)</li>
+               <li>background: repeating-radial-gradient(..)</li>
+           </ul>
        </section>
        <section>
            <p>Rotacja obiektów</p>
-           <!--iframe width="1000" height="600" src="http://paulrhayes.com/experiments/pyramid/">http://paulrhayes.com/experiments/pyramid/</iframe-->
+           <iframe width="1000" height="600" src="http://paulrhayes.com/experiments/pyramid/">http://paulrhayes.com/experiments/pyramid/</iframe>
            https://github.com/fofr/paulrhayes.com-experiments/blob/master/pyramid/css/experiment.css
        </section>
        <section>
-           <p>transform-style: preserve-3d;</p>
-           <p>animation: spin 10s linear infinite;</p>
-           <p>transform-origin: 116px 200px 116px;</p>
-       </section>
-       <section>
-           transform: rotateY(180deg);
-           translate3d(x, y, z), translateZ(z)
-           Move the element in x, y and z, and just move the element in z. Positive z is towards the viewer. Unlike x and y, the z value cannot be a percentage.
-           scale3d(sx, sy, sz), scaleZ(sz)
-           Scale the element in x, y and z. The z scale affects the scaling along the z axis in transformed children.
-           rotateX(angle), rotateY(angle), rotate3d(x, y, z, angle),
-           The first two forms simply rotate the element about the horizontal and vertical axes. Angle units can be degrees (deg) radians (rad) or gradians (grad). The last form allows you to rotate the element around an arbitrary vector in 3D space; x, y and z should specify the unit vector you wish to rotate around (we’ll normalize it for you).
-           perspective(p)
-           This function allows you to put some perspective into the transformation matrix. For an explanation of p, see below. Normally perspective is applied via the -webkit-perspective property, but this function allows you to get a perspective effect for a single element, with something like:
-
-           -webkit-transform: perspective(500px) rotateY(20deg);
-
-           matrix3d(…)
-           This function allows you to specify the raw 4×4 homogeneous transformation matrix of 16 values in column-major order. Have fun with that!
-
-           We’ve also extended one other CSS transform property, and implemented the four other 3D-related properties described in the spec:
+           <ul>
+               <li>transform-style: preserve-3d; (transform-style: flat|preserve-3d|initial|inherit;)</li>
+               <li>transform: rotateY(180deg); (transform: none|transform-functions|initial|inherit;)</li>
+               <li>rotateX(angle), rotateY(angle), rotate3d(x, y, z, angle) - odwracanie elementu</li> <!-- odwracanie elementu -->
+               <li>translate3d(x, y, z), translateZ(z) - przesuniecie elementów</li> <!-- przesuniecie elementow -->
+               <li>scale3d(sx, sy, sz), scaleZ(sz) - skalowanie elementów</li><!-- skalowanie element x, y i z. -->
+               <li>perspektywy (p) - Funkcja ta pozwala umieścić jakąś perspektywę do macierzy transformacji</li>
+               <li>animation: .... (animation-name: spin; animation-duration: 4000ms; animation-iteration-count: infinite; animation-timing-function: linear;) </li>
+           </ul>
        </section>
    </section>
 
     <section>
-        <section>
+        <section id="formCSS">
             <h3>Formularze i animacje</h3>
         </section>
         <section>
-            <!--iframe width="1000" height="600"  src="http://2011.beercamp.com/"></iframe-->
+            <iframe width="1000" height="600"  src="http://2011.beercamp.com/"></iframe>
             http://2011.beercamp.com/
         </section>
         <section>
-            <!--iframe width="1000" height="600" src="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index3.html"></iframe-->
+            <iframe width="1000" height="600" src="http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index3.html"></iframe>
             http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index3.html
         </section>
     </section>
