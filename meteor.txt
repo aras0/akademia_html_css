@@ -10,5 +10,6 @@ https://github.com/hakimel/reveal.js#configuration
 
 
 public meteor app:
+np:
 meteor deploy akademia_app.meteor.com
 http://akademia_app.meteor.com
